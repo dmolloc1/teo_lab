@@ -14,6 +14,6 @@ Task::~Task()
 }
 
 void Task::addName(){
-    QString inp = ui->name->text();
+    QString inp = ui->nameInput->text();
     emit showName(inp);
 }

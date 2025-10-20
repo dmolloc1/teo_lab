@@ -25,6 +25,7 @@ void MainWindow::showInMain(const QString &n) {
 void MainWindow::openTask()
 {
     Task taskDialog(this);
+    connect(&taskDialog, &Task::showName, this, &MainWindow::showInMain);
     taskDialog.exec();
 }
 

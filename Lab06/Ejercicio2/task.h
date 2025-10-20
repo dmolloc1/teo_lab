@@ -19,7 +19,7 @@ private:
     Ui::Task *ui;
 
 signals:
-    void showName(QString &n);
+    void showName(const QString &n);
 
 };
 
