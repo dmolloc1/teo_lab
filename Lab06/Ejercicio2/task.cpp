@@ -6,6 +6,8 @@ Task::Task(QWidget *parent)
     , ui(new Ui::Task)
 {
     ui->setupUi(this);
+    connect(ui->buttonBox, &QDialogButtonBox::accepted, this, &Task::addName);
+
 }
 
 Task::~Task()

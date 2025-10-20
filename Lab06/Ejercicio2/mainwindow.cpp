@@ -7,8 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    connect(&taskDialog, &Task::showName, this, &MainWindow::showInMain);
-    connect(ui->taskButton, &QPushButton::clicked, this, &MainWindow::openTaskDialog);
+    connect(ui->taskButton, &QPushButton::clicked, this, &MainWindow::openTask);
 
 }
 

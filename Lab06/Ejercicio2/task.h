@@ -14,6 +14,7 @@ class Task : public QDialog
 public:
     explicit Task(QWidget *parent = nullptr);
     ~Task();
+    void addName();
 
 private:
     Ui::Task *ui;
