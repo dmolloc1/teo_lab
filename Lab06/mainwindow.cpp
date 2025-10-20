@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+
 #include "task.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -7,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     //connect(ui->addTaskButton, &QPushButton::clicked, QApplication::instance(), &QApplication::quit);
-    connect(ui->addTaskButton, &QPushButton::clicked, this, &MainWindow::openTaskDialog);
+    connect(ui->listColors, &QListWidget::itemClicked, this, &MainWindow::clickColor);
 
 }
 

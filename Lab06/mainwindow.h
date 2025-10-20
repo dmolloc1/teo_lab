@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QListWidget>
+#include <QListWidgetItem>
+#include <QLabel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,8 +22,6 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    QListWidget *listColors;
-    QLabel *color;
 
 public slots:
     void clickColor(QListWidgetItem *q);
