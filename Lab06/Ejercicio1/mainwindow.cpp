@@ -6,7 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    //connect(ui->addTaskButton, &QPushButton::clicked, QApplication::instance(), &QApplication::quit);
+
     connect(ui->listColors, &QListWidget::itemClicked, this, &MainWindow::clickColor);
 
 }

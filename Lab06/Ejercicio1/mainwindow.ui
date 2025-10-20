@@ -20,7 +20,7 @@
       <x>60</x>
       <y>90</y>
       <width>131</width>
-      <height>192</height>
+      <height>151</height>
      </rect>
     </property>
     <item>
@@ -62,8 +62,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>140</y>
+      <x>210</x>
+      <y>110</y>
       <width>211</width>
       <height>51</height>
      </rect>
@@ -83,14 +83,35 @@
    <widget class="QLabel" name="color">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>160</y>
+      <x>420</x>
+      <y>130</y>
       <width>63</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>Color</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;LISTA DE COLORES&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
     </property>
    </widget>
   </widget>
