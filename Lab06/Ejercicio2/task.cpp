@@ -12,3 +12,7 @@ Task::~Task()
 {
     delete ui;
 }
+
+void Task::addName(){
+    QString inp = ui->name->text();
+}

@@ -19,4 +19,6 @@ private:
     Ui::Task *ui;
 };
 
+signals:
+    void showName(QString &n);
 #endif // TASK_H
