@@ -15,4 +15,5 @@ Task::~Task()
 
 void Task::addName(){
     QString inp = ui->name->text();
+    emit showName(inp);
 }
