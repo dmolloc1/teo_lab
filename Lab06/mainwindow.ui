@@ -14,30 +14,83 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="addTaskButton">
+   <widget class="QListWidget" name="listColors">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>40</y>
-      <width>121</width>
-      <height>29</height>
+      <x>60</x>
+      <y>90</y>
+      <width>131</width>
+      <height>192</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Agregar Tarea</string>
-    </property>
+    <item>
+     <property name="text">
+      <string>Rojo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Azul</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Verde</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Marron</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Amarillo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Morado</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Turqueza</string>
+     </property>
+    </item>
    </widget>
-   <widget class="QLabel" name="statusLabel">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>50</y>
+      <y>140</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700; color:#55007f;&quot;&gt;Color seleccionado :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="color">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>160</y>
       <width>63</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>Status</string>
+     <string>TextLabel</string>
     </property>
    </widget>
   </widget>

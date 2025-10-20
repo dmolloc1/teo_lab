@@ -16,7 +16,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::openTaskDialog() {
-    Task taskDialog(this);
-    taskDialog.exec();
+void MainWindow::clickColor(QListWidgetItem *c) {
+    color->setText(c->text());
 }
+

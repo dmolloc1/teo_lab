@@ -19,8 +19,11 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QListWidget *listColors;
+    QLabel *color;
 
 public slots:
-    void openTaskDialog();
+    void clickColor(QListWidgetItem *q);
+
 };
 #endif // MAINWINDOW_H
