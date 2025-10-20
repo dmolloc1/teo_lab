@@ -21,7 +21,8 @@ private:
     Ui::MainWindow *ui;
 
 public slots:
-    void showInMain(QString &n);
+    void showInMain(const QString &n);
+    void openTask();
 };
 
 #endif // MAINWINDOW_H
