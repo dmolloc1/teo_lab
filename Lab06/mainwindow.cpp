@@ -1,7 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "task.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -18,6 +17,6 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::clickColor(QListWidgetItem *c) {
-    color->setText(c->text());
+    ui->color->setText(c->text());
 }
 
