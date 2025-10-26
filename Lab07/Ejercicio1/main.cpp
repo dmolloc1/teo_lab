@@ -12,9 +12,9 @@ int main(int argc, char *argv[])
     for(int i = 0; i < 20; i++){
         num_list.push_back(rand()%50);
     }
-    int impar = count_if(num_list.begin() , num_list.end(), [int n]{
+    int impar = count_if(num_list.begin() , num_list.end(), [](int n){
 
-        return n < 20 && /(n % 2 != 0);
+        return n < 20 && n % 2 != 0;
     });
 
     return a.exec();
