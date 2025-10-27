@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QListView" name="list_paises">
+   <widget class="QListWidget" name="list_paises">
     <property name="geometry">
      <rect>
       <x>40</x>
