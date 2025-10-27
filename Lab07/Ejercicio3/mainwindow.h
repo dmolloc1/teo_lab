@@ -20,4 +20,8 @@ public:
 private:
     Ui::MainWindow *ui;
 };
+
+public slots:
+    void openTask();
+};
 #endif // MAINWINDOW_H
