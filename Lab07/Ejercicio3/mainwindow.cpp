@@ -24,6 +24,8 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::showPais() {
-    ui->idioma_pais->showText();
+void MainWindow::showPais(QListWidgetItem *q){
+    int id = ui->list_paises->row(q);
+    ui->idioma_pais->setText(paises[id].idi);
+    ui->capital_pais->setText(paises[id].cap);
 }
