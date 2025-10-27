@@ -16,10 +16,11 @@ int main(int argc, char *argv[])
     }
 
     cout<< "Vector\n";
+    //Se usa una función lambda que cuente los numéros impares
     int impar = count_if(num_list.begin() , num_list.end(), [](int n){
         cout<< n<<" - ";
         return n < 20 && (n % 2 != 0);
     });
-    cout<< "\nNumeros impares: "<< impar;
-    return a.exec();
+    cout<< "\nNumeros impares: "<< impar<<endl;
+    return 0;
 }
