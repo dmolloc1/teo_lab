@@ -18,5 +18,21 @@ private:
     Node* getNext() {
         return next;
     }
+    void setNext(Node* n) {
+        next = n;
+    }
         
+};
+
+template <class T>
+class List {
+private:
+    Node<T>* head;
+    Node<T>* tail;
+public:
+    List() {
+        head = nullptr;
+        tail = nullptr;
+    }
+    
 };
