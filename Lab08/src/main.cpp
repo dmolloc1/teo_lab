@@ -1,6 +1,7 @@
-#include "List.h"
-#include "Node.h"
+#include "../include/List.h"
+#include "../include/Node.h"
 
+#include <iostream>
 using namespace std;
 
 int main() {
