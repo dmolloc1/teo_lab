@@ -6,13 +6,12 @@ class Node {
 private:
     T data;//Informacion que contiene que puede ser de cualquier tipo
     Node* next;//Puntero al siguiente nodo
-
+public:
     //En una lista enlazada simple solo se puede recorrer en una direccion
     Node(T d){
         data = d;
         next = nullptr;
     }
-    
     //getters y setters
     T getData() {
         return data;
@@ -52,15 +51,16 @@ public:
 
     void insert(T nod){
         //Si es el primer elemento se coloca su puntero en head y tail
+        Node<T>* chain = new Node(nod);
+
         if (head == nullptr) {
-            head = new Node<T>(nod);
-            tail = *head;
+            head = chain;
+            tail = chain;
             return;
         } 
         //Si ya hay elementos se coloca al final 
-        Node<T>* chain = new Node<T>(nod);
         tail->setNext(chain);
-        tail = *chain;
+        tail = chain;
     }
 
     void print(){
