@@ -63,7 +63,8 @@ public:
         tail = chain;
     }
 
-    void print(){
+    //Se coloca const para asegurarse que no se alteren los valores de la lista
+    void print () const{
         Node<T>* pivot = head;
         //Recorre la lista desde el head usando un pivote
         while (pivot != nullptr) {
