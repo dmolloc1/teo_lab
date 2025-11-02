@@ -35,4 +35,16 @@ public:
         tail = nullptr;
     }
     
+    void insert(T nod){
+        if (head == nullptr) {
+            head = new Node<T>(nod);
+            tail = *head;
+            return;
+        } 
+            
+        Node<T>* chain = new Node<T>(nod);
+        tail->setNext(chain);
+        tail = *chain;
+    }
+
 };
