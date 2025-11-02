@@ -34,7 +34,17 @@ public:
         head = nullptr;
         tail = nullptr;
     }
-    
+    ~List() {
+        Node<T>* actual = head;
+        Node<T>* pivot = nullptr;
+        
+        while (actual != nullptr) {
+            pivot = actual->getNext();
+            delete actual;
+            actual = pivot;
+        }
+    }
+
     void insert(T nod){
         if (head == nullptr) {
             head = new Node<T>(nod);
